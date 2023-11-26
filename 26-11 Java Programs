@@ -1,0 +1,93 @@
+Certainly, Lester. Let's break down each question into step-by-step algorithms:
+
+### 1. Quick Sort Algorithm for Sorting Names
+
+**Algorithm:**
+1. **Define the Quick Sort Function:**
+   - Inputs: Array of names `names[]`, start index `start`, end index `end`.
+   - Base condition: If `start` is greater than or equal to `end`, return.
+   - Call a partition function and get the partition index `pIndex`.
+   - Recursively call the quick sort function for the left partition (`names`, `start`, `pIndex - 1`).
+   - Recursively call the quick sort function for the right partition (`names`, `pIndex + 1`, `end`).
+
+2. **Partition Function:**
+   - Choose the end element as the pivot.
+   - Initialize a variable `pIndex` at the start index.
+   - Loop through the array from `start` to `end - 1`.
+     - If an element is less than the pivot, swap it with the element at `pIndex`, and increment `pIndex`.
+   - Swap the pivot element with the element at `pIndex`.
+   - Return `pIndex`.
+
+3. **Main Function:**
+   - Initialize an array of names.
+   - Call the quick sort function with the array, 0 as start index, and the length of the array minus 1 as the end index.
+
+### 2. File Handling with Reader/Writer
+
+**Algorithm:**
+1. **Create a File Writer:**
+   - Initialize a `FileWriter` object with the desired file path.
+   - Write data to the file using the `write` method.
+   - Close the `FileWriter`.
+
+2. **Create a File Reader:**
+   - Initialize a `FileReader` object with the same file path.
+   - Read data from the file using a loop and the `read` method.
+   - Display the read data.
+   - Close the `FileReader`.
+
+### 3. Read and Write Using `FileInputStream` and `FileOutputStream`
+
+**Algorithm:**
+1. **Setup FileInputStream:**
+   - Create a `FileInputStream` object for the source file.
+   - Handle `FileNotFoundException`.
+
+2. **Setup FileOutputStream:**
+   - Create a `FileOutputStream` object for the destination file.
+   - Handle `FileNotFoundException`.
+
+3. **Read and Write:**
+   - Use a loop to read data from the `FileInputStream`.
+   - Write the read data to the `FileOutputStream`.
+   - Handle `IOException`.
+
+4. **Close Streams:**
+   - Close both `FileInputStream` and `FileOutputStream`.
+
+### 4. Display File Content with Line Numbers
+
+**Algorithm:**
+1. **Open the File:**
+   - Use `BufferedReader` with `FileReader` to open the file.
+
+2. **Read and Display Lines:**
+   - Initialize a line counter.
+   - Read each line in a loop.
+   - For each line, increment the counter and display the line number followed by the line content.
+
+3. **Close the File:**
+   - Close the `BufferedReader`.
+
+### 5. Count Characters, Lines, and Words in a File
+
+**Algorithm:**
+1. **Open the File:**
+   - Use `BufferedReader` with `FileReader`.
+
+2. **Initialize Counters:**
+   - Initialize counters for characters, lines, and words.
+
+3. **Read and Count:**
+   - Read the file line by line.
+   - For each line, increment the line counter.
+   - Split the line into words and increment the word counter.
+   - Count the characters in each line and increment the character counter.
+
+4. **Display Counts:**
+   - Display the number of characters, words, and lines.
+
+5. **Close the File:**
+   - Close the `BufferedReader`.
+
+These algorithms provide a high-level overview of the programs. When implementing in Java, you'll need to add the necessary imports and handle any exceptions appropriately.
