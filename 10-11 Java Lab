@@ -1,0 +1,73 @@
+Here are step-by-step algorithms for each of these Java programming tasks:
+
+### 30. Hierarchical Inheritance - Employee, Officer, and Manager
+
+**Algorithm:**
+1. **Create Class 'Employee':**
+   - Define members: Name, Age, Phone number, Address, Salary.
+   - Create a method `printSalary()` to print the Employee's salary.
+
+2. **Create Class 'Officer' (Inherits 'Employee'):**
+   - Add a member `specialization`.
+   - Use super constructor to initialize inherited members.
+
+3. **Create Class 'Manager' (Inherits 'Employee'):**
+   - Add a member `department`.
+   - Use super constructor to initialize inherited members.
+
+4. **Create Objects and Assign Values:**
+   - Create an object of 'Officer', set values, and call `printSalary()`.
+   - Create an object of 'Manager', set values, and call `printSalary()`.
+
+5. **Display Information:**
+   - Print the details of the Officer and Manager along with their salaries.
+
+### 31. Single Inheritance & Super Keyword - Employee and Engineer
+
+**Algorithm:**
+1. **Create Class 'Employee':**
+   - Define methods `display()` (prints class name) and `calcSalary()` (prints default salary).
+
+2. **Create Class 'Engineer' (Inherits 'Employee'):**
+   - Override `calcSalary()` to display a different salary amount.
+
+3. **Instantiate and Use 'Engineer' Object:**
+   - Create an Engineer object.
+   - Call `display()` and `calcSalary()` using this object.
+
+### 32. Abstract Class and Polymorphism - Shape, Rectangle, Triangle, Hexagon
+
+**Algorithm:**
+1. **Create Abstract Class 'Shape':**
+   - Define an abstract method `numberOfSides()`.
+
+2. **Create Classes 'Rectangle', 'Triangle', 'Hexagon' (Inherit 'Shape'):**
+   - Implement `numberOfSides()` in each class to return the number of sides for each shape.
+
+3. **Instantiate and Display Number of Sides:**
+   - Create objects of Rectangle, Triangle, and Hexagon.
+   - Call `numberOfSides()` for each object and display the results.
+
+### 33. Multiple Inheritance Using Interface - Sports, Student, Test, Results
+
+**Algorithm:**
+1. **Create Interface 'Sports':**
+   - Define a final variable `sportwt` and an abstract method `putwt()`.
+
+2. **Create Class 'Student':**
+   - Define member variable `rollnumber`.
+   - Implement methods `getNumber()` and `putNumber()`.
+
+3. **Create Class 'Test' (Inherits 'Student'):**
+   - Add members `term1`, `term2`.
+   - Implement methods `getMarks()` and `putMarks()`.
+
+4. **Create Class 'Results' (Inherits 'Test' and Implements 'Sports'):**
+   - Implement `putwt()` method.
+   - Define a method to display total score: term marks + sports weightage.
+
+5. **Instantiate and Display Results:**
+   - Create a 'Results' object, set values.
+   - Display roll number, term marks, sports weightage, and total score.
+
+For implementation, remember to correctly handle inheritance and interface implementation in Java, ensuring that the data encapsulation and method overriding are done as per the requirements of the problems.
